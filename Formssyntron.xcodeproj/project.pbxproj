@@ -3,18 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00FC3FC990127E592C495623 /* Pods_FormssyntronTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA214A248F51BAADF46D6EB /* Pods_FormssyntronTests.framework */; };
+		8D49BE1524E05675008B4DF9 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D49BE1424E05675008B4DF9 /* cities.json */; };
+		8D49BE1724E056BB008B4DF9 /* CountryListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49BE1624E056BB008B4DF9 /* CountryListService.swift */; };
+		8D49BE1924E056FC008B4DF9 /* CountryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49BE1824E056FC008B4DF9 /* CountryListViewController.swift */; };
+		8D49BE1B24E0570E008B4DF9 /* CountryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49BE1A24E0570E008B4DF9 /* CountryListViewModel.swift */; };
+		8D49BE1D24E0571C008B4DF9 /* CountryListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49BE1C24E0571C008B4DF9 /* CountryListModel.swift */; };
+		8D49BE1F24E05736008B4DF9 /* CountryListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49BE1E24E05736008B4DF9 /* CountryListRouter.swift */; };
+		8D49BE2124E0576F008B4DF9 /* CountryList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D49BE2024E0576F008B4DF9 /* CountryList.storyboard */; };
+		8D49BE2424E05837008B4DF9 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D49BE2324E05837008B4DF9 /* BaseVC.swift */; };
 		8DB9605724E0337C00071B1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9605624E0337C00071B1C /* AppDelegate.swift */; };
-		8DB9605924E0337C00071B1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9605824E0337C00071B1C /* SceneDelegate.swift */; };
-		8DB9605B24E0337C00071B1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9605A24E0337C00071B1C /* ViewController.swift */; };
-		8DB9605E24E0337C00071B1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DB9605C24E0337C00071B1C /* Main.storyboard */; };
 		8DB9606024E0338000071B1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB9605F24E0338000071B1C /* Assets.xcassets */; };
 		8DB9606324E0338000071B1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DB9606124E0338000071B1C /* LaunchScreen.storyboard */; };
 		8DB9606E24E0338100071B1C /* FormssyntronTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9606D24E0338100071B1C /* FormssyntronTests.swift */; };
 		8DB9607924E0338100071B1C /* FormssyntronUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9607824E0338100071B1C /* FormssyntronUITests.swift */; };
+		BEF773A4FD01E968A308AF90 /* Pods_Formssyntron_FormssyntronUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3881B840C890A26991EA8755 /* Pods_Formssyntron_FormssyntronUITests.framework */; };
+		E0BA5FB1C52998D1EEA364F1 /* Pods_Formssyntron.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4547D5268FD9395844DCDA01 /* Pods_Formssyntron.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +43,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AF2D5F59B866BE845DCF56F /* Pods-Formssyntron-FormssyntronUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formssyntron-FormssyntronUITests.debug.xcconfig"; path = "Target Support Files/Pods-Formssyntron-FormssyntronUITests/Pods-Formssyntron-FormssyntronUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3881B840C890A26991EA8755 /* Pods_Formssyntron_FormssyntronUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Formssyntron_FormssyntronUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4547D5268FD9395844DCDA01 /* Pods_Formssyntron.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Formssyntron.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57F3ECDCA1055C75859A9226 /* Pods-FormssyntronTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FormssyntronTests.debug.xcconfig"; path = "Target Support Files/Pods-FormssyntronTests/Pods-FormssyntronTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D49BE1424E05675008B4DF9 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
+		8D49BE1624E056BB008B4DF9 /* CountryListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListService.swift; sourceTree = "<group>"; };
+		8D49BE1824E056FC008B4DF9 /* CountryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewController.swift; sourceTree = "<group>"; };
+		8D49BE1A24E0570E008B4DF9 /* CountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModel.swift; sourceTree = "<group>"; };
+		8D49BE1C24E0571C008B4DF9 /* CountryListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListModel.swift; sourceTree = "<group>"; };
+		8D49BE1E24E05736008B4DF9 /* CountryListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListRouter.swift; sourceTree = "<group>"; };
+		8D49BE2024E0576F008B4DF9 /* CountryList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CountryList.storyboard; sourceTree = "<group>"; };
+		8D49BE2324E05837008B4DF9 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		8DB9605324E0337C00071B1C /* Formssyntron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Formssyntron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB9605624E0337C00071B1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8DB9605824E0337C00071B1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8DB9605A24E0337C00071B1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8DB9605D24E0337C00071B1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DB9605F24E0338000071B1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DB9606224E0338000071B1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DB9606424E0338000071B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +66,11 @@
 		8DB9607424E0338100071B1C /* FormssyntronUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormssyntronUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB9607824E0338100071B1C /* FormssyntronUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormssyntronUITests.swift; sourceTree = "<group>"; };
 		8DB9607A24E0338100071B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		942ACA6534ECD187EC100E65 /* Pods-Formssyntron-FormssyntronUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formssyntron-FormssyntronUITests.release.xcconfig"; path = "Target Support Files/Pods-Formssyntron-FormssyntronUITests/Pods-Formssyntron-FormssyntronUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ACA214A248F51BAADF46D6EB /* Pods_FormssyntronTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FormssyntronTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1BD7BF647948447E85FA175 /* Pods-FormssyntronTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FormssyntronTests.release.xcconfig"; path = "Target Support Files/Pods-FormssyntronTests/Pods-FormssyntronTests.release.xcconfig"; sourceTree = "<group>"; };
+		B8E11965C5FD4A46BFE14D20 /* Pods-Formssyntron.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formssyntron.debug.xcconfig"; path = "Target Support Files/Pods-Formssyntron/Pods-Formssyntron.debug.xcconfig"; sourceTree = "<group>"; };
+		BCD38B674BD23EC71329814E /* Pods-Formssyntron.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formssyntron.release.xcconfig"; path = "Target Support Files/Pods-Formssyntron/Pods-Formssyntron.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0BA5FB1C52998D1EEA364F1 /* Pods_Formssyntron.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00FC3FC990127E592C495623 /* Pods_FormssyntronTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +94,81 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF773A4FD01E968A308AF90 /* Pods_Formssyntron_FormssyntronUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BEF29D58F2158D1ED91F603 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8E11965C5FD4A46BFE14D20 /* Pods-Formssyntron.debug.xcconfig */,
+				BCD38B674BD23EC71329814E /* Pods-Formssyntron.release.xcconfig */,
+				0AF2D5F59B866BE845DCF56F /* Pods-Formssyntron-FormssyntronUITests.debug.xcconfig */,
+				942ACA6534ECD187EC100E65 /* Pods-Formssyntron-FormssyntronUITests.release.xcconfig */,
+				57F3ECDCA1055C75859A9226 /* Pods-FormssyntronTests.debug.xcconfig */,
+				B1BD7BF647948447E85FA175 /* Pods-FormssyntronTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		56BA303B2FDDC96018077967 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4547D5268FD9395844DCDA01 /* Pods_Formssyntron.framework */,
+				3881B840C890A26991EA8755 /* Pods_Formssyntron_FormssyntronUITests.framework */,
+				ACA214A248F51BAADF46D6EB /* Pods_FormssyntronTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D49BE1024E0556A008B4DF9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8D49BE1624E056BB008B4DF9 /* CountryListService.swift */,
+				8D49BE1424E05675008B4DF9 /* cities.json */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8D49BE1124E05572008B4DF9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8D49BE1324E055AB008B4DF9 /* Map */,
+				8D49BE1224E05588008B4DF9 /* SearchCountry */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8D49BE1224E05588008B4DF9 /* SearchCountry */ = {
+			isa = PBXGroup;
+			children = (
+				8D49BE1824E056FC008B4DF9 /* CountryListViewController.swift */,
+				8D49BE1A24E0570E008B4DF9 /* CountryListViewModel.swift */,
+				8D49BE1C24E0571C008B4DF9 /* CountryListModel.swift */,
+				8D49BE1E24E05736008B4DF9 /* CountryListRouter.swift */,
+				8D49BE2024E0576F008B4DF9 /* CountryList.storyboard */,
+			);
+			path = SearchCountry;
+			sourceTree = "<group>";
+		};
+		8D49BE1324E055AB008B4DF9 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		8D49BE2224E05826008B4DF9 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				8D49BE2324E05837008B4DF9 /* BaseVC.swift */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
 		8DB9604A24E0337C00071B1C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +176,8 @@
 				8DB9606C24E0338100071B1C /* FormssyntronTests */,
 				8DB9607724E0338100071B1C /* FormssyntronUITests */,
 				8DB9605424E0337C00071B1C /* Products */,
+				2BEF29D58F2158D1ED91F603 /* Pods */,
+				56BA303B2FDDC96018077967 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,9 +195,9 @@
 			isa = PBXGroup;
 			children = (
 				8DB9605624E0337C00071B1C /* AppDelegate.swift */,
-				8DB9605824E0337C00071B1C /* SceneDelegate.swift */,
-				8DB9605A24E0337C00071B1C /* ViewController.swift */,
-				8DB9605C24E0337C00071B1C /* Main.storyboard */,
+				8D49BE2224E05826008B4DF9 /* BaseClasses */,
+				8D49BE1124E05572008B4DF9 /* Scenes */,
+				8D49BE1024E0556A008B4DF9 /* Services */,
 				8DB9605F24E0338000071B1C /* Assets.xcassets */,
 				8DB9606124E0338000071B1C /* LaunchScreen.storyboard */,
 				8DB9606424E0338000071B1C /* Info.plist */,
@@ -135,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DB9607D24E0338100071B1C /* Build configuration list for PBXNativeTarget "Formssyntron" */;
 			buildPhases = (
+				BEB3F8F5CDE2AE3DFB63BA01 /* [CP] Check Pods Manifest.lock */,
 				8DB9604F24E0337C00071B1C /* Sources */,
 				8DB9605024E0337C00071B1C /* Frameworks */,
 				8DB9605124E0337C00071B1C /* Resources */,
+				3434E7AA114CEF351F53C9BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DB9608024E0338100071B1C /* Build configuration list for PBXNativeTarget "FormssyntronTests" */;
 			buildPhases = (
+				5B899EB6D3E897912694C876 /* [CP] Check Pods Manifest.lock */,
 				8DB9606524E0338100071B1C /* Sources */,
 				8DB9606624E0338100071B1C /* Frameworks */,
 				8DB9606724E0338100071B1C /* Resources */,
+				646735331C7CEB635E1C7C85 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,9 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DB9608324E0338100071B1C /* Build configuration list for PBXNativeTarget "FormssyntronUITests" */;
 			buildPhases = (
+				D3F72BAAFC609D464D4E4C3A /* [CP] Check Pods Manifest.lock */,
 				8DB9607024E0338100071B1C /* Sources */,
 				8DB9607124E0338100071B1C /* Frameworks */,
 				8DB9607224E0338100071B1C /* Resources */,
+				EB51DDC4AE30FC03D80E319A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,9 +333,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D49BE1524E05675008B4DF9 /* cities.json in Resources */,
 				8DB9606324E0338000071B1C /* LaunchScreen.storyboard in Resources */,
+				8D49BE2124E0576F008B4DF9 /* CountryList.storyboard in Resources */,
 				8DB9606024E0338000071B1C /* Assets.xcassets in Resources */,
-				8DB9605E24E0337C00071B1C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +356,138 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3434E7AA114CEF351F53C9BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Formssyntron/Pods-Formssyntron-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Formssyntron/Pods-Formssyntron-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Formssyntron/Pods-Formssyntron-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B899EB6D3E897912694C876 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FormssyntronTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		646735331C7CEB635E1C7C85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FormssyntronTests/Pods-FormssyntronTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FormssyntronTests/Pods-FormssyntronTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FormssyntronTests/Pods-FormssyntronTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEB3F8F5CDE2AE3DFB63BA01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Formssyntron-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3F72BAAFC609D464D4E4C3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Formssyntron-FormssyntronUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB51DDC4AE30FC03D80E319A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Formssyntron-FormssyntronUITests/Pods-Formssyntron-FormssyntronUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Formssyntron-FormssyntronUITests/Pods-Formssyntron-FormssyntronUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Formssyntron-FormssyntronUITests/Pods-Formssyntron-FormssyntronUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8DB9604F24E0337C00071B1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DB9605B24E0337C00071B1C /* ViewController.swift in Sources */,
+				8D49BE1724E056BB008B4DF9 /* CountryListService.swift in Sources */,
+				8D49BE1924E056FC008B4DF9 /* CountryListViewController.swift in Sources */,
+				8D49BE1F24E05736008B4DF9 /* CountryListRouter.swift in Sources */,
+				8D49BE2424E05837008B4DF9 /* BaseVC.swift in Sources */,
+				8D49BE1B24E0570E008B4DF9 /* CountryListViewModel.swift in Sources */,
 				8DB9605724E0337C00071B1C /* AppDelegate.swift in Sources */,
-				8DB9605924E0337C00071B1C /* SceneDelegate.swift in Sources */,
+				8D49BE1D24E0571C008B4DF9 /* CountryListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +523,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8DB9605C24E0337C00071B1C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8DB9605D24E0337C00071B1C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8DB9606124E0338000071B1C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,6 +650,7 @@
 		};
 		8DB9607E24E0338100071B1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8E11965C5FD4A46BFE14D20 /* Pods-Formssyntron.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +669,7 @@
 		};
 		8DB9607F24E0338100071B1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCD38B674BD23EC71329814E /* Pods-Formssyntron.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +688,7 @@
 		};
 		8DB9608124E0338100071B1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57F3ECDCA1055C75859A9226 /* Pods-FormssyntronTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +711,7 @@
 		};
 		8DB9608224E0338100071B1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1BD7BF647948447E85FA175 /* Pods-FormssyntronTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +734,7 @@
 		};
 		8DB9608424E0338100071B1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AF2D5F59B866BE845DCF56F /* Pods-Formssyntron-FormssyntronUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +755,7 @@
 		};
 		8DB9608524E0338100071B1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 942ACA6534ECD187EC100E65 /* Pods-Formssyntron-FormssyntronUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
