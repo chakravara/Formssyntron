@@ -22,4 +22,8 @@ struct CountryList: Codable{
     let lat: Double
   }
   
+  struct DisplayModel {
+    
+  }
+  
 }

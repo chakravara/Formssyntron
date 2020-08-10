@@ -22,6 +22,7 @@
 		8DB9606324E0338000071B1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DB9606124E0338000071B1C /* LaunchScreen.storyboard */; };
 		8DB9606E24E0338100071B1C /* FormssyntronTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9606D24E0338100071B1C /* FormssyntronTests.swift */; };
 		8DB9607924E0338100071B1C /* FormssyntronUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9607824E0338100071B1C /* FormssyntronUITests.swift */; };
+		8DC0FD2F24E1AE4B00838EEE /* BaseSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0FD2E24E1AE4B00838EEE /* BaseSplitViewController.swift */; };
 		BEF773A4FD01E968A308AF90 /* Pods_Formssyntron_FormssyntronUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3881B840C890A26991EA8755 /* Pods_Formssyntron_FormssyntronUITests.framework */; };
 		E0BA5FB1C52998D1EEA364F1 /* Pods_Formssyntron.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4547D5268FD9395844DCDA01 /* Pods_Formssyntron.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		8DB9607424E0338100071B1C /* FormssyntronUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormssyntronUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB9607824E0338100071B1C /* FormssyntronUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormssyntronUITests.swift; sourceTree = "<group>"; };
 		8DB9607A24E0338100071B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC0FD2E24E1AE4B00838EEE /* BaseSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSplitViewController.swift; sourceTree = "<group>"; };
 		942ACA6534ECD187EC100E65 /* Pods-Formssyntron-FormssyntronUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formssyntron-FormssyntronUITests.release.xcconfig"; path = "Target Support Files/Pods-Formssyntron-FormssyntronUITests/Pods-Formssyntron-FormssyntronUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ACA214A248F51BAADF46D6EB /* Pods_FormssyntronTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FormssyntronTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1BD7BF647948447E85FA175 /* Pods-FormssyntronTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FormssyntronTests.release.xcconfig"; path = "Target Support Files/Pods-FormssyntronTests/Pods-FormssyntronTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		8D49BE2724E0629F008B4DF9 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				8DC0FD2E24E1AE4B00838EEE /* BaseSplitViewController.swift */,
 				8D49BE2524E0629B008B4DF9 /* CountryListTVCCell.swift */,
 			);
 			path = Components;
@@ -488,6 +491,7 @@
 				8D49BE1724E056BB008B4DF9 /* CountryListService.swift in Sources */,
 				8D49BE1924E056FC008B4DF9 /* CountryListViewController.swift in Sources */,
 				8D49BE1F24E05736008B4DF9 /* CountryListRouter.swift in Sources */,
+				8DC0FD2F24E1AE4B00838EEE /* BaseSplitViewController.swift in Sources */,
 				8D49BE2B24E0E38E008B4DF9 /* MapViewController.swift in Sources */,
 				8D49BE1B24E0570E008B4DF9 /* CountryListViewModel.swift in Sources */,
 				8DB9605724E0337C00071B1C /* AppDelegate.swift in Sources */,

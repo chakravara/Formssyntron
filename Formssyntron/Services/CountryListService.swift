@@ -12,7 +12,6 @@ import RxSwift
 struct CountryListServiceModel: Codable {
   
   struct Get {
-    
     struct request: Encodable {
       
     }
@@ -20,19 +19,21 @@ struct CountryListServiceModel: Codable {
     struct response: Decodable {
       var countryList: [CountryList.Country]
     }
-    
   }
 }
 
 class CountryListService {
   
   func getData() -> CountryListServiceModel.Get.response? {
-    guard let path = Bundle.main.path(forResource: "cities", ofType: "json") else { return nil }
+    guard let path = Bundle.main.path(forResource: "cities",
+                                           ofType: "json") else { return nil }
     do {
-    let jsonData = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+    let jsonData = try Data(contentsOf: URL(fileURLWithPath: path),
+                               options: .mappedIfSafe)
     let decoder = JSONDecoder()
       do {
-        let objects = try decoder.decode( [CountryList.Country].self, from: jsonData)
+        let objects = try decoder.decode( [CountryList.Country].self,
+                                          from: jsonData)
         let response =  CountryListServiceModel.Get.response(countryList: objects)
         return response
       }

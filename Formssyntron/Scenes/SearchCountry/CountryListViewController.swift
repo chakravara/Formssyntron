@@ -13,11 +13,9 @@ import RxSwift
 final class CountryListViewController: UITableViewController {
   
   private var resultSearchController = UISearchController()
-  private var services = CountryListService()
-  private var list: CountryListServiceModel.Get.response?
   private var displaylist: [CountryList.Country]?
-  
-  private var router: CountryListRouter!
+  private var disposeBag = DisposeBag()
+  private var viewModel: CountryListViewModel!
   
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -37,13 +35,34 @@ final class CountryListViewController: UITableViewController {
     super.viewDidLoad()
     setUpSearhBar()
     displaySetup()
-    list = services.getData()
     setUp()
+    viewModel.getData()
   }
   
   private func setUp(){
-    router = CountryListRouter()
-    router.view = self
+    viewModel = CountryListViewModel()
+    viewModel.router.view = self
+    observe()
+  }
+  
+  private func observe(){
+    
+    viewModel.searchSuccess
+      .observeOn(MainScheduler.instance)
+      .subscribe(onNext: { [weak self]  searchResult in
+           guard let self = self else { return }
+           self.displaylist = searchResult
+           self.tableView.reloadData()
+      }).disposed(by: disposeBag)
+    
+    viewModel.getDataSuccess
+      .observeOn(MainScheduler.instance)
+      .subscribe(onNext: { [weak self] list in
+           guard let self = self else { return }
+           self.displaylist = list
+           self.tableView.reloadData()
+      }).disposed(by: disposeBag)
+
   }
   
 }
@@ -72,7 +91,7 @@ extension CountryListViewController {
                           didSelectRowAt indexPath: IndexPath) {
      guard let list = displaylist else { return }
      let selected = list[indexPath.row]
-     router.routeToMap(country: selected)
+     viewModel.router.routeToMap(country: selected)
      
   }
 }
@@ -83,33 +102,13 @@ extension CountryListViewController: UISearchBarDelegate,
   
   func updateSearchResults(for searchController: UISearchController) {
     guard let text =  searchController.searchBar.text else { return }
-    guard let list = self.list else { return }
-    let searched = searchLogic(input: text, data: list)
+    let searched = viewModel.searchLogic(input: text)
     if let searchedList = searched {
       displaylist = searchedList
       tableView.reloadData()
     }
    }
  }
-
-// Search Logic
-extension CountryListViewController {
-  
-  func searchLogic(input: String,
-                   data: CountryListServiceModel.Get.response) -> [CountryList.Country]? {
-    guard case let textInput = input , textInput != "" && textInput != " " else { return nil }
-    guard case let count = data.countryList.count , count > 0 else { return nil }
-    let countries = data.countryList
-    let filteredName = countries.filter({ $0.name.lowercased()
-                                                 .hasPrefix(input.lowercased())})
-    let orderedName = filteredName.sorted {
-                      $0.name.lowercased() < $1.name.lowercased() }
-    let orderedCountryCode = orderedName.sorted {
-                             $0.country.lowercased() < $1.country.lowercased() }
-    return orderedCountryCode
-     
-  }
-}
 
 // initial setup
 extension CountryListViewController {

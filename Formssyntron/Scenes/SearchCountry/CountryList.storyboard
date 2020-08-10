@@ -122,10 +122,10 @@
             </objects>
             <point key="canvasLocation" x="233" y="-581"/>
         </scene>
-        <!--Split View Controller-->
+        <!--Base Split View Controller-->
         <scene sceneID="8hn-Qg-gWq">
             <objects>
-                <splitViewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="OxU-tJ-df2" sceneMemberID="viewController">
+                <splitViewController restorationIdentifier="BaseSplitViewController" id="OxU-tJ-df2" customClass="BaseSplitViewController" customModule="Formssyntron" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <segue destination="0x1-M1-gU3" kind="relationship" relationship="masterViewController" id="fMj-LS-usB"/>
                         <segue destination="Z3R-0t-KPu" kind="relationship" relationship="detailViewController" id="vxO-Cv-nS6"/>
