@@ -14,11 +14,13 @@ final class CountryListViewController: UITableViewController {
   
   private var resultSearchController = UISearchController()
   private var services = CountryListService()
+  private var list: CountryListServiceModel.Get.response?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     setUpSearhBar()
     displaySetup()
-    let x = services.getData()
+    list = services.getData()
   }
   
   
@@ -56,21 +58,27 @@ extension CountryListViewController: UISearchBarDelegate,
     // simplfied to lowercase
     // filter by text
     guard let text =  searchController.searchBar.text else { return }
-    
+    guard let list = self.list else { return }
+    searchLogic(input: text, data: list)
   }
   
  }
 
 extension CountryListViewController {
-//  func searchLogic(input: String,
-//                   data: CountryListServiceModel.Get.response) {
-//    guard case let count = data.countryList.count , count > 0 else { return }
-//    let countries = data.countryList
-//    let filtered = countries.filter { (oneCountry: CountryList.Country) -> Bool in
-//      return oneCountry.self
-//       //return candy.name.lowercased().contains(searchText.lowercased())
-//     }
-//  }
+  
+  func searchLogic(input: String,
+                   data: CountryListServiceModel.Get.response) {
+    guard case let textInput = input , textInput != "" && textInput != " " else { return }
+    guard case let count = data.countryList.count , count > 0 else { return }
+    let countries = data.countryList
+    let filteredName = countries.filter({ $0.name.lowercased()
+                                                 .hasPrefix(input.lowercased())})
+    let orderedName = filteredName.sorted {
+                      $0.name.lowercased() < $1.name.lowercased() }
+    let orderedCountryCode = orderedName.sorted {
+                             $0.country.lowercased() < $1.country.lowercased() }
+     
+  }
 }
 
 // initial setup
