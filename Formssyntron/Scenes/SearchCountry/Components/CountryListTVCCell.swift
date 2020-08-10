@@ -1,5 +1,5 @@
 //
-//  BaseVC.swift
+//  CountryListTVCCell.swift
 //  Formssyntron
 //
 //  Created by Xoxo on 9/8/2563 BE.
@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-class BaseVC: UIViewController {
-  
+class CountryListTVCCell: UITableViewCell {
   
 }
