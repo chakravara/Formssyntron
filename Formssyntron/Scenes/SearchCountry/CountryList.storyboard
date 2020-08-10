@@ -14,13 +14,27 @@
                     <view key="view" contentMode="scaleToFill" id="bJe-s6-f88">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NFq-eM-lfx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NFq-eM-lfx" firstAttribute="leading" secondItem="cpS-K9-hMQ" secondAttribute="leading" id="IYP-t9-weL"/>
+                            <constraint firstItem="NFq-eM-lfx" firstAttribute="top" secondItem="cpS-K9-hMQ" secondAttribute="top" id="MZl-ne-JkD"/>
+                            <constraint firstItem="NFq-eM-lfx" firstAttribute="bottom" secondItem="cpS-K9-hMQ" secondAttribute="bottom" id="PR3-yb-8U2"/>
+                            <constraint firstItem="NFq-eM-lfx" firstAttribute="trailing" secondItem="cpS-K9-hMQ" secondAttribute="trailing" id="gK0-3Y-0X9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cpS-K9-hMQ"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="NFq-eM-lfx" id="x5e-n1-Y0Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6x-rO-zdu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="233" y="67"/>
+            <point key="canvasLocation" x="231.8840579710145" y="66.964285714285708"/>
         </scene>
         <!--City List-->
         <scene sceneID="kbU-Qx-DPP">

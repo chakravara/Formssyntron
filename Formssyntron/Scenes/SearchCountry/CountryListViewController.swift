@@ -17,13 +17,34 @@ final class CountryListViewController: UITableViewController {
   private var list: CountryListServiceModel.Get.response?
   private var displaylist: [CountryList.Country]?
   
+  private var router: CountryListRouter!
+  
+  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    setUp()
+  }
+  
+  convenience init() {
+    self.init(nibName: nil, bundle: nil)
+  }
+  
+  required init?(coder: NSCoder) {
+    super.init(coder: coder)
+    setUp()
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     setUpSearhBar()
     displaySetup()
     list = services.getData()
+    setUp()
   }
   
+  private func setUp(){
+    router = CountryListRouter()
+    router.view = self
+  }
   
 }
 
@@ -46,7 +67,16 @@ extension CountryListViewController {
     cell.displayData(data: data)
     return cell
   }
+  
+  override func tableView(_ tableView: UITableView,
+                          didSelectRowAt indexPath: IndexPath) {
+     guard let list = displaylist else { return }
+     let selected = list[indexPath.row]
+     router.routeToMap(country: selected)
+     
+  }
 }
+
 // Search Bar Delegates
 extension CountryListViewController: UISearchBarDelegate,
                                      UISearchResultsUpdating {
@@ -62,6 +92,7 @@ extension CountryListViewController: UISearchBarDelegate,
    }
  }
 
+// Search Logic
 extension CountryListViewController {
   
   func searchLogic(input: String,

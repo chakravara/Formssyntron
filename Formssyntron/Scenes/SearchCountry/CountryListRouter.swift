@@ -7,4 +7,17 @@
 //
 
 import Foundation
+import UIKit
 
+class CountryListRouter {
+  
+  weak var view: CountryListViewController!
+  
+  func routeToMap(country: CountryList.Country) {
+     let sb =  UIStoryboard.init(name: "CountryList", bundle: nil)
+     let destination  =  sb.instantiateViewController(identifier: "MapViewController") as MapViewController
+     destination.displayData = country
+     view.splitViewController?.showDetailViewController(destination, sender: nil)
+   }
+  
+}
